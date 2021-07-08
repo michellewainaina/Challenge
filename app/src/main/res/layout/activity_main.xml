@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittxtFirstName"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittxtSecondName"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Second Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edittxtFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edittxtFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtFirstName" />
+
+    <EditText
+        android:id="@+id/edittxtEmail"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edittxtSecondName"
+        app:layout_constraintStart_toStartOf="@+id/edittxtSecondName"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtSecondName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onRegisterbtnClick"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/edittxtEmail"
+        app:layout_constraintStart_toStartOf="@+id/edittxtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtEmail" />
+
+    <TextView
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="First Name"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/txtSecondName"
+        android:layout_width="95dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Second Name"
+        app:layout_constraintEnd_toEndOf="@+id/txtFirstName"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/txtSecondName"
+        app:layout_constraintStart_toStartOf="@+id/txtSecondName"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
